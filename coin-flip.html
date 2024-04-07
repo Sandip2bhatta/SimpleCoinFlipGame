@@ -5,22 +5,11 @@
   </head>
   <body>
     <script>
-      let randomNumber =Math.random();
+      const randomNumber =Math.random();
+      const result =randomNumber < 0.5 ? 'heads':'tails'
 
-      let result;
-      
-      if(randomNumber<0.5) {
-        result = 'heads';
-      } else{
-        result = 'tails';
-      }
-      const guess = 'tails';
-      if(result===guess){
-        console.log('You Win');
-      } else{
-        console.log('You lose!');
-      }
-
+      const guess = 'heads';
+      console.log(guess===result? 'You win!' : "You lose!");
     </script>
   </body>
 </html>
